@@ -44,7 +44,7 @@ def index():
 
 @app.route("/predict", methods=["POST"])
 def predict():
-    # build input vector in same order as feature_list
+    # This is being changed to make 
     row = []
     for feat in feature_list:
         field = feature_field_map[feat]
